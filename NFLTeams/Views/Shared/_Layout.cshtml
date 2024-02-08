@@ -23,6 +23,7 @@
             {
                 var session = new NFLSession(Context.Session);
                 <h5 class="bg-info p-2">
+                    @(session.GetName() == null ? "My" : session.GetName() + "'s")
                     <a asp-controller="Favorites" asp-action="Index"
                        class="text-white">My Favorite Teams</a>
 

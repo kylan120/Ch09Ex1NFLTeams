@@ -3,8 +3,11 @@
 <form asp-action="Change" method="post">
     <input asp-for="@Model.UserName" placeholder="Type name here"
             class="mb-3" /><br />
-    <a asp-controller="Home" asp-action="Index"
-       class="list-group-item">Home</a>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary" 
+    asp-route-activeConf="@Model.ActiveConf"
+     asp-route-activeDiv="@Model.ActiveDiv">
+        Home
+    </a>
     <button type="submit" class="btn btn-primary">
         Change Name
     </button>
