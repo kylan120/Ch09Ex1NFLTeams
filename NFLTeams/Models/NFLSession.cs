@@ -9,6 +9,14 @@ namespace NFLTeams.Models
         private const string CountKey = "teamcount";
         private const string ConfKey = "conf";
         private const string DivKey = "div";
+        private const string NameKey = "username";
+
+        public string GetName() => session.GetString(NameKey);
+        public void SetName(string username) =>
+            session.SetString(NameKey, username);
+
+
+        
 
         private ISession session { get; set; }
         public NFLSession(ISession session) {

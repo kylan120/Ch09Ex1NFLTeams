@@ -6,6 +6,8 @@ namespace NFLTeams.Models
     {
         public List<Team> Teams { get; set; }
 
+        public string UserName { get; set; }
+
         // use full properties for Conferences and Divisions 
         // so can add 'All' item at beginning
         private List<Conference> conferences;
