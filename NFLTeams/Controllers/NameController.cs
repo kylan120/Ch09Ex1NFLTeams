@@ -16,7 +16,7 @@ namespace NFLTeams.Controllers
                 ActiveDiv = session.GetActiveDiv(),
             });
         }
-        [Route("Name")]
+       
         [HttpGet]
         public ViewResult NameIndex()
         {

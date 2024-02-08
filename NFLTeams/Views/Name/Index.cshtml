@@ -1,0 +1,11 @@
+﻿@model TeamListViewModel
+
+<form asp-action="Change" method="post">
+    <input asp-for="@Model.UserName" placeholder="Type name here"
+            class="mb-3" /><br />
+    <a asp-controller="Home" asp-action="Index"
+       class="list-group-item">Home</a>
+    <button type="submit" class="btn btn-primary">
+        Change Name
+    </button>
+</form>
